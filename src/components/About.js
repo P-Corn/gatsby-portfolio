@@ -20,7 +20,7 @@ export default function About() {
             <h5 className="text-bodyText font-semibold text-xl">Me:</h5>
             <p className="text-bodyText">Here's a bunch of text that will sum up just about everything you'll need to know about me.</p>
           </div>
-          <div className="my-6"></div>
+          <div className="my-9"></div>
           <div>
             <h5 className="text-bodyText font-semibold text-xl">Skills:</h5>
             <div className="mt-3">
@@ -33,7 +33,7 @@ export default function About() {
               <SkillSpan skill="Git"/>
             </div>
           </div>
-          <div className="my-6"></div>
+          <div className="my-9"></div>
           <div>
             <h5 className="text-bodyText font-semibold text-xl">Social:</h5>
             <div className="mt-3 flex justify-between">
