@@ -22,7 +22,7 @@ export default function About() {
           </div>
           <div className="my-6"></div>
           <div>
-            <h5 className="text-bodyText font-semibold text-xl">Bread and Butter:</h5>
+            <h5 className="text-bodyText font-semibold text-xl">Skills:</h5>
             <div className="mt-3">
               <SkillSpan skill="HTML"/>
               <SkillSpan skill="CSS"/>
