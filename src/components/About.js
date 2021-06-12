@@ -39,7 +39,7 @@ export default function About() {
   const SectionTitle = () => {
     return (
       <div className="text-center">
-        <h2 className="text-3xl text-primary font-medium">About</h2>
+        <h2 className="text-3xl text-bodyText font-medium">About</h2>
         <hr className="w-16 border-2 border-primary mx-auto mt-3 mb-9"></hr>
       </div>
     )
