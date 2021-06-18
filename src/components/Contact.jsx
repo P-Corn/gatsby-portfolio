@@ -2,7 +2,7 @@ import React from "react";
 import SectionHeader from './utils/SectionHeader';
 import SkillSpan from "./utils/SkillSpan";
 
-export default function Projects() {
+export default function Contact() {
   const tempSkills = ['HTML5', 'CSS3', 'ReactJS', 'JavaScript', 'Material-UI'];
 
   const ProjectCard = ({title, desc, skills}) => (
