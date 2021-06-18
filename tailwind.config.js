@@ -17,7 +17,7 @@ module.exports = {
         DEFAULT: "#747FE0",
         dark: "#4b57c3"
       },
-      bodyText: "#525f7f"
+      bodyText: "#525f7f",
     }
   },
   variants: {
