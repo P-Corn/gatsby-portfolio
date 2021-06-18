@@ -28,14 +28,14 @@ export default function About() {
     return (
       <div className="bg-white w-full p-7 rounded-md shadow-2xl flex items-center flex-col md:flex-row">
         <div>
-          <div className="pt-3.5 mx-auto mb-7 flex justify-center items-center bg-primary w-40 h-40 rounded-full">
+          <div className="pt-3 mx-auto mb-8 flex justify-center items-center bg-primary w-40 h-40 rounded-full">
             <MyPicture />
           </div>
-          <div className="mb-7">
+          <div className="mb-8">
             <Subtitle subtitle="Me:"/>
             <p className="text-bodyText">Here's a bunch of text that will sum up just about everything you'll need to know about me.</p>
           </div>
-          <div className="mb-4">
+          <div className="mb-5">
             <Subtitle subtitle="Skills:"/>
             <div className="mt-3">
               {skills.map(skill => (
