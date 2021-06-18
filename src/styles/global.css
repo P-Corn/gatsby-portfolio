@@ -16,6 +16,13 @@
     px-4
 }
 
+.section-title {
+    @apply
+    text-3xl 
+    text-bodyText 
+    font-medium
+}
+
 .btn {
     @apply 
     py-2 
