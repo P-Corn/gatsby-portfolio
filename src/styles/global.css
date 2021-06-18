@@ -18,7 +18,7 @@
 
 .section-title {
     @apply
-    text-3xl 
+    text-2xl 
     text-bodyText 
     font-medium
 }
@@ -34,6 +34,8 @@
     transition-all
     duration-200
     tracking-wider
+    shadow-md
+    hover:shadow-lg
 }
 
 .btn-blue {
@@ -41,9 +43,15 @@
     bg-primary
     text-white
     hover:bg-primary-dark
-    shadow
-    hover:shadow-lg
 }
 /* .btn-blue:hover {
     @apply bg-blue-700;
 } */
+
+.card {
+    @apply 
+    bg-white
+    p-7 
+    rounded-md 
+    shadow-card
+}
