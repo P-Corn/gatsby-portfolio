@@ -10,8 +10,8 @@ export default function About() {
       src="../media/meCut.png" 
       alt="picture of myself"
       placeholder="blurred"
-      width={110}
-      height={135}
+      width={120}
+      height={145}
       objectFit="fill"
     />
   )
@@ -28,7 +28,7 @@ export default function About() {
     return (
       <div className="bg-white w-full p-7 rounded-md shadow-2xl flex items-center flex-col md:flex-row">
         <div>
-          <div className="pt-2 mx-auto mb-7 flex justify-center items-center bg-primary w-36 h-36 rounded-full">
+          <div className="pt-3.5 mx-auto mb-7 flex justify-center items-center bg-primary w-40 h-40 rounded-full">
             <MyPicture />
           </div>
           <div className="mb-7">
