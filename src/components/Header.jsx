@@ -1,6 +1,21 @@
-import React from "react"
+import React, {useEffect} from "react";
+import Typewriter from 'typewriter-effect/dist/core';;
 
 export default function Header() {
+
+  useEffect(() => {
+    const typewriter = new Typewriter(document.querySelector('.hero-text'), {
+      loop: false,
+      delay: 100
+    })
+
+    typewriter
+      .typeString('Hi, I\'m Peyton')
+      .pauseFor(2500)
+      .deleteAll()
+      .typeString('I\'m a web developer')
+      .start();
+  }, [])
 
   const Navlink = ({text}) => (
     <li className="flex-1 text-center py-2">
@@ -35,10 +50,7 @@ export default function Header() {
       <Navbar/>
       <section className="section h-screen text-center flex justify-center content-center flex-col">
         <div className="mb-3">
-          <h1 className="text-4xl sm:text-5xl text-primary font-semibold">Hi, I'm Peyton</h1>
-        </div>
-        <div>
-          <h2 className="text-xl sm:text-2xl text-primary font-light">I'm a web developer</h2>
+          <h1 className="hero-text text-4xl sm:text-5xl text-bodyText font-semibold"></h1>
         </div>
         <div className="mb-14 mt-9">
           <button className="btn btn-blue">MY PROJECTS</button>

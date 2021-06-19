@@ -55,3 +55,11 @@
     rounded-md 
     shadow-card
 }
+
+.project-card {
+    @apply last:mb-0
+}
+
+.Typewriter__cursor {
+    @apply text-green
+}

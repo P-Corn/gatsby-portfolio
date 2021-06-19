@@ -20,7 +20,7 @@ export default function About() {
   const Subtitle = ({subtitle}) => (
     <h5 className="text-bodyText font-semibold text-xl">{subtitle}</h5>
   )
-  
+
   const AboutContent = () => (
       <div className="card w-full flex items-center flex-col md:flex-row">
         <div>
@@ -52,8 +52,8 @@ export default function About() {
   )
 
   return (
-    <div className="bg-section">
-      <section className="section h-screen">
+    <div className="mb-28">
+      <section className="section">
         <SectionHeader title="About" />
         <AboutContent />
       </section>
