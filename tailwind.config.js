@@ -18,6 +18,7 @@ module.exports = {
         dark: "#4b57c3"
       },
       bodyText: "#525f7f",
+      darkBg: "#5a5d7a"
     },
     boxShadow: {
       sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
