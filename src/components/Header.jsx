@@ -19,7 +19,7 @@ export default function Header() {
 
   const Navlink = ({text}) => (
     <li className="flex-1 text-center py-2">
-      <button className="btn text-green">{text}</button>
+      <button className="btn text-primary">{text}</button>
     </li>
   )
 
@@ -46,14 +46,14 @@ export default function Header() {
   // }
 
   return (
-    <div className="mb-28 bg-darkBg relative parent">
+    <div className="mb-28 bg-section relative parent">
       <Navbar/>
       <section className="section h-screen text-center flex justify-center content-center flex-col">
         <div aria-label="Hi, I'm Peyton, I'm a web developer" className="mb-3">
-          <h1 aria-hidden="true" className="hero-text text-4xl sm:text-5xl text-white font-semibold"></h1>
+          <h1 aria-hidden="true" className="hero-text text-4xl sm:text-5xl text-bodyText font-semibold"></h1>
         </div>
         <div className="mb-14 mt-9">
-          <button className="btn bg-white text-primary shadow-md">MY PROJECTS</button>
+          <button className="btn btn-blue">MY PROJECTS</button>
         </div>
       </section>
       {/* <ShapeDivider/> */}
