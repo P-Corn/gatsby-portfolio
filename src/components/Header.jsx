@@ -8,9 +8,10 @@ export default function Header() {
   const [windowWidth, setWindowWidth] = useState();
 
   useEffect(() => {
-    setWindowWidth(window.innerWidth);
-    console.log(window.innerWidth)
-  }, [window.innerWidth])
+    if (window.innerWidth) {
+      setWindowWidth(window.innerWidth);
+    }
+  }, [])
 
   useEffect(() => {
     const typewriter = new Typewriter(document.querySelector('.hero-text'), {
