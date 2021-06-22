@@ -8,10 +8,13 @@ export default function Header() {
   const [windowWidth, setWindowWidth] = useState();
 
   useEffect(() => {
-    if (window.innerWidth) {
+    if (window) {
       setWindowWidth(window.innerWidth);
+      window.addEventListener("resize", () => {
+        setWindowWidth(window.innerWidth);
+      })
     }
-  }, [])
+  }, [window.innerWidth])
 
   useEffect(() => {
     const typewriter = new Typewriter(document.querySelector('.hero-text'), {
@@ -66,13 +69,13 @@ export default function Header() {
           <button className="btn btn-blue">MY PROJECTS</button>
         </div>
       </section>
-      <div className="w-screen absolute inset-0">
+      <div className="absolute inset-0">
         {
           windowWidth > 640
           ?
-          <BubbleHeader/>
+          <BubbleHeader className="w-full"/>
           :
-          <BubbleHeaderMobile/>
+          <BubbleHeaderMobile className="w-full"/>
         }
       </div>
     </div>
