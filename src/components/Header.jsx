@@ -23,10 +23,10 @@ export default function Header() {
     })
 
     typewriter
-      .typeString('Hi, I\'m Peyton')
-      .pauseFor(2500)
-      .deleteAll()
-      .typeString('I\'m a web developer')
+      .typeString('Hi, I\'m Peyton.')
+      .pauseFor(1500)
+      .pasteString('<div class="sm:py-2"><div/>')
+      .typeString('I\'m a web developer.')
       .start();
   }, [])
 
@@ -63,7 +63,7 @@ export default function Header() {
       <Navbar/>
       <section className="section h-screen text-center flex justify-center content-center flex-col">
         <div aria-label="Hi, I'm Peyton, I'm a web developer" className="z-10 mb-3">
-          <h1 aria-hidden="true" className="hero-text text-4xl sm:text-5xl text-bodyText font-semibold"></h1>
+          <h1 aria-hidden="true" className="hero-text leading-10"></h1>
         </div>
         <div className="z-10 mb-14 mt-9">
           <button className="btn btn-blue">MY PROJECTS</button>

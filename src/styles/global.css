@@ -15,6 +15,14 @@
     /* background-image: url('../media/bubble-header.svg'); */
 }
 
+.hero-text {
+    @apply 
+    text-3xl 
+    sm:text-5xl 
+    text-bodyText 
+    font-semibold
+}
+
 .section {
     @apply 
     mx-auto
