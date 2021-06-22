@@ -73,9 +73,9 @@ export default function Header() {
         {
           windowWidth > 640
           ?
-          <BubbleHeader className="w-full"/>
+          <BubbleHeader className="w-full h-full"/>
           :
-          <BubbleHeaderMobile className="w-full"/>
+          <BubbleHeaderMobile className="w-full h-full"/>
         }
       </div>
     </div>
