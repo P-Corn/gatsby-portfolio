@@ -9,6 +9,10 @@
     }
 }
 
+.header {
+    /* background-image: url('../media/bubble-header.svg'); */
+}
+
 .section {
     @apply 
     mx-auto
@@ -21,6 +25,7 @@
     text-2xl 
     text-bodyText 
     font-medium
+    sm:text-3xl
 }
 
 .btn {

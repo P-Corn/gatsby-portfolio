@@ -1,5 +1,6 @@
 import React, {useEffect} from "react";
-import Typewriter from 'typewriter-effect/dist/core';;
+import Typewriter from 'typewriter-effect/dist/core';
+import BubbleHeader from '../media/svg/bubble-header.svg';
 
 export default function Header() {
 
@@ -24,7 +25,7 @@ export default function Header() {
   )
 
   const Navbar = () => (
-    <div className="w-full absolute child">
+    <div className="z-10 w-full absolute child">
         <ul className="w-full h-20 flex justify-around items-center max-w-screen-lg mx-auto">
             <Navlink text="ABOUT"/>
             <Navlink text="PROJECTS"/>
@@ -46,17 +47,19 @@ export default function Header() {
   // }
 
   return (
-    <div className="mb-28 bg-section relative parent">
+    <div className="mb-28 relative parent">
       <Navbar/>
       <section className="section h-screen text-center flex justify-center content-center flex-col">
-        <div aria-label="Hi, I'm Peyton, I'm a web developer" className="mb-3">
+        <div aria-label="Hi, I'm Peyton, I'm a web developer" className="z-10 mb-3">
           <h1 aria-hidden="true" className="hero-text text-4xl sm:text-5xl text-bodyText font-semibold"></h1>
         </div>
-        <div className="mb-14 mt-9">
+        <div className="z-10 mb-14 mt-9">
           <button className="btn btn-blue">MY PROJECTS</button>
         </div>
       </section>
-      {/* <ShapeDivider/> */}
+      <div className="absolute inset-0">
+        <BubbleHeader/>
+      </div>
     </div>
   )
 }

@@ -38,5 +38,12 @@ module.exports = {
       margin: ['last']
     },
   },
+  extend: {
+    backgroundImage: theme => ({
+      theme,
+     'bubble-header': "url('/src/media/svg/bubble-header.svg')",
+     'footer-texture': "url('https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg')",
+    })
+  },
   plugins: [],
 }
