@@ -40,7 +40,7 @@ export default function Header() {
     <div className="z-10 w-full absolute child">
         <ul className="w-full h-20 flex justify-around items-center max-w-screen-lg mx-auto">
             <Navlink text="ABOUT"/>
-            <Navlink text="PROJECTS"/>
+            <Navlink text="PROJECT"/>
             <Navlink text="CONTACT"/>
         </ul>
     </div>
