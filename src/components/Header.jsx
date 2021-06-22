@@ -25,7 +25,7 @@ export default function Header() {
     typewriter
       .typeString('Hi, I\'m Peyton.')
       .pauseFor(1500)
-      .pasteString('<div class="sm:py-2"><div/>')
+      .pasteString('<div class="py-1 sm:py-2"><div/>')
       .typeString('I\'m a web developer.')
       .start();
   }, [])
@@ -40,7 +40,7 @@ export default function Header() {
     <div className="z-10 w-full absolute child">
         <ul className="w-full h-20 flex justify-around items-center max-w-screen-lg mx-auto">
             <Navlink text="ABOUT"/>
-            <Navlink text="PROJECT"/>
+            <Navlink text="PROJECTS"/>
             <Navlink text="CONTACT"/>
         </ul>
     </div>
