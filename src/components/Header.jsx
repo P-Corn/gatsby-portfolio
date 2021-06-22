@@ -1,8 +1,16 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import Typewriter from 'typewriter-effect/dist/core';
 import BubbleHeader from '../media/svg/bubble-header.svg';
+import BubbleHeaderMobile from '../media/svg/bubble-header-mobile.svg';
 
 export default function Header() {
+
+  const [windowWidth, setWindowWidth] = useState();
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+    console.log(window.innerWidth)
+  }, [window.innerWidth])
 
   useEffect(() => {
     const typewriter = new Typewriter(document.querySelector('.hero-text'), {
@@ -57,8 +65,14 @@ export default function Header() {
           <button className="btn btn-blue">MY PROJECTS</button>
         </div>
       </section>
-      <div className="absolute inset-0">
-        <BubbleHeader/>
+      <div className="w-screen absolute inset-0">
+        {
+          windowWidth > 640
+          ?
+          <BubbleHeader/>
+          :
+          <BubbleHeaderMobile/>
+        }
       </div>
     </div>
   )
