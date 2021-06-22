@@ -14,7 +14,7 @@ export default function Header() {
         setWindowWidth(window.innerWidth);
       })
     }
-  }, [window.innerWidth])
+  }, [])
 
   useEffect(() => {
     const typewriter = new Typewriter(document.querySelector('.hero-text'), {
