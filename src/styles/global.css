@@ -66,13 +66,17 @@
 .card {
     @apply 
     bg-white
-    p-7 
     rounded-md 
     shadow-card
 }
 
 .project-card {
     @apply last:mb-0
+}
+
+.project-background {
+    height: 110%;
+    width: 83%;
 }
 
 .Typewriter__cursor {

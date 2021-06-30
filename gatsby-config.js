@@ -1,8 +1,6 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`
+})
 
 module.exports = {
   /* Your site config here */
@@ -17,6 +15,13 @@ module.exports = {
         rule: {
           include: /svg/
         }
+      }
+    },
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        spaceId: 'wdk31r0j42hp',
+        accessToken: 'eyIKtvcM1MM4a3co34ReIqrAQjAgz61Q_-jk_unK00s',
       }
     }
   ],

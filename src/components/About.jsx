@@ -26,7 +26,7 @@ export default function About() {
 
   const AboutContent = () => (
     <div className="card w-full flex items-center flex-col md:flex-row">
-      <div className="md:flex items-center">
+      <div className="md:flex items-center p-10">
         <div className="flex-none pt-3 mx-auto mb-8 md:mb-0 flex justify-center items-center bg-section shadow-inner w-48 h-48 rounded-full">
           <MyPicture />
         </div>

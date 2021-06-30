@@ -14,7 +14,7 @@ export default function Contact() {
     <div className="pb-28">
       <div className="section">
         <SectionHeader title="Contact"/>
-        <form className="card">
+        <form className="card p-10">
           <div className="mb-8">
             <h2 className="text-bodyText sm:text-lg text-center">Want to work with me? <br className="sm:hidden"/> <span className="border-b-2 border-green">Send me a message.</span></h2>
           </div>
