@@ -11,6 +11,9 @@ module.exports = {
         DEFAULT: "#92eac0",
         dark: "#379683"
       },
+      purple: {
+        DEFAULT: '#ba74e0'
+      },
       white: colors.white,
       section: "#f6f9fc",
       primary: {

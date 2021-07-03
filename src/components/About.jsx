@@ -5,6 +5,7 @@ import SkillSpan from "./utils/SkillSpan";
 import Twitter from '../media/svg/twitter.svg';
 import Linkedin from '../media/svg/linkedIn.svg';
 import Github from '../media/svg/github.svg';
+import AboutBg from '../media/svg/aboutBgRight.svg';
 
 export default function About() {
   const skills = ['HTML', 'CSS', ' JavaScript', 'React', 'Node', 'SCSS', 'Git'];
@@ -25,13 +26,15 @@ export default function About() {
   )
 
   const AboutContent = () => (
-    <div className="card w-full flex items-center flex-col md:flex-row">
-      <div className="md:flex items-center p-10">
-        <div className="flex-none pt-3 mx-auto mb-8 md:mb-0 flex justify-center items-center bg-section shadow-inner w-48 h-48 rounded-full">
+    <div className="card w-full relative parent overflow-hidden">
+      <div className="absolute child top-0">
+        <AboutBg />
+      </div>
+      <div className="z-10">
+        {/* <div className="flex-none pt-3 mx-auto mb-8 md:mb-0 flex justify-center items-center bg-section shadow-inner w-48 h-48 rounded-full">
           <MyPicture />
-        </div>
-        <div className="md:px-8"></div>
-        <div>
+        </div> */}
+        <div className="sm:w-3/4 md:w-1/2 lg:w-1/2">
           <div className="mb-8 md:mb-10">
             <Subtitle subtitle="Me:"/>
             <p className="text-bodyText md:mt-1.5">Here's a bunch of text that will sum up just about everything you'll need to know about me. Here's a bunch of text that will sum up just about everything you'll need to know about me.</p>
@@ -46,10 +49,10 @@ export default function About() {
           </div>
           <div>
             <Subtitle subtitle="Social:"/>
-            <div className="flex justify-between mt-2.5 md:mt-4">
-              <a href="https://www.twitter.com"><Twitter className="fill-current text-primary h-10 w-10"/></a>
-              <a href="https://www.linkedin.com"><Linkedin className="fill-current text-primary h-10 w-10"/></a>
-              <a href="https://www.github.com"><Github className="fill-current text-primary h-10 w-10"/></a>
+            <div className="flex justify-start mt-2.5 md:mt-4">
+              <a href="https://www.twitter.com"><Twitter className="fill-current mr-20 text-primary h-10 w-10"/></a>
+              <a href="https://www.linkedin.com"><Linkedin className="fill-current mr-20 text-primary h-10 w-10"/></a>
+              <a href="https://www.github.com"><Github className="fill-current mr-20 text-primary h-10 w-10"/></a>
             </div>
           </div>
         </div>

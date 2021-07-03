@@ -42,7 +42,7 @@ export default function Projects() {
       <ProjectImage image={image}/>
       <ProjectBackground className="project-background invisible lg:visible absolute -top-px -right-px"/>
       {/* <div className={`project-background invisible lg:visible -top-px -right-px absolute`}></div> */}
-      <div className="lg:w-7/12 p-10 z-10">
+      <div className="lg:w-7/12 z-10">
         <div>
           <h2 className="text-3xl text-bodyText font-normal mb-8">{title}</h2>
         </div>

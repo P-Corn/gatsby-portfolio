@@ -68,6 +68,8 @@
     bg-white
     rounded-md 
     shadow-card
+    p-9 
+    sm:p-10
 }
 
 .project-card {
@@ -76,7 +78,7 @@
 
 .project-background {
     height: auto;
-    width: 83%;
+    width: 80%;
 }
 
 .Typewriter__cursor {
