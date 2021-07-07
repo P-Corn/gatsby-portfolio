@@ -34,8 +34,6 @@ export default function Projects() {
       <div className="absolute top-0 left-0 invisible lg:visible">
         <GatsbyImage
           image={image}
-          // imgClassName="absolute top-0 left-0 invisible lg:visible"
-          // className="absolute top-0 left-0 invisible lg:visible"
           alt="project image"
         />
       </div>
