@@ -33,7 +33,7 @@ export default function Projects() {
     <GatsbyImage 
       image={image}
       alt="project image"
-      className="absolute top-0 left-0 invisible lg:visible"
+      imgClassName="absolute top-0 left-0 invisible lg:visible"
     />
   )
 
