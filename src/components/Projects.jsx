@@ -34,6 +34,7 @@ export default function Projects() {
       <GatsbyImage
         image={image}
         imgClassName="absolute top-0 left-0 invisible lg:visible"
+        className="absolute top-0 left-0 invisible lg:visible"
         alt="project image"
       />
       <ProjectBackground className="project-background invisible lg:visible absolute -top-px -right-px"/>
