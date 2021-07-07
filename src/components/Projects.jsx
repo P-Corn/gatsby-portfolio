@@ -33,8 +33,8 @@ export default function Projects() {
     <div className="relative parent card mb-10 project-card lg:flex lg:justify-end overflow-hidden">
       <GatsbyImage
         image={image}
-        imgClassName="absolute top-0 left-0 invisible lg:visible"
-        className="absolute top-0 left-0 invisible lg:visible"
+        imgClassName="project-card-image"
+        className="project-card-image"
         alt="project image"
       />
       <ProjectBackground className="project-background invisible lg:visible absolute -top-px -right-px"/>
