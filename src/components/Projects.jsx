@@ -32,9 +32,9 @@ export default function Projects() {
   const ProjectCard = ({title, desc, skills, previewLink, githubLink, image}) => (
     <div className="relative parent card mb-10 project-card lg:flex lg:justify-end overflow-hidden">
       <GatsbyImage
-      image={image}
-      className="absolute top-0 left-0 invisible lg:visible"
-      alt="project image"
+        image={image}
+        imgClassName="absolute top-0 left-0 invisible lg:visible"
+        alt="project image"
       />
       <ProjectBackground className="project-background invisible lg:visible absolute -top-px -right-px"/>
       {/* <div className={`project-background invisible lg:visible -top-px -right-px absolute`}></div> */}
