@@ -29,17 +29,13 @@ export default function Projects() {
     }`)
   const [projects] = useState(projectData.allContentfulProject.edges);
 
-  const ProjectImage = ({image}) => (
-    <GatsbyImage 
-      image={image}
-      alt="project image"
-      imgClassName="absolute top-0 left-0 invisible lg:visible"
-    />
-  )
-
   const ProjectCard = ({title, desc, skills, previewLink, githubLink, image}) => (
     <div className="relative parent card mb-10 project-card lg:flex lg:justify-end overflow-hidden">
-      <ProjectImage image={image}/>
+      <GatsbyImage
+      image={image}
+      className="absolute top-0 left-0 invisible lg:visible"
+      alt="project image"
+      />
       <ProjectBackground className="project-background invisible lg:visible absolute -top-px -right-px"/>
       {/* <div className={`project-background invisible lg:visible -top-px -right-px absolute`}></div> */}
       <div className="lg:w-7/12 z-10">
