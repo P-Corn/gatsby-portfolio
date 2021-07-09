@@ -1,49 +1,44 @@
 import React, {useEffect, useState} from "react";
 import Typewriter from 'typewriter-effect/dist/core';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Header() {
 
   useEffect(() => {
     const typewriter = new Typewriter(document.querySelector('.hero-text'), {
-      loop: false,
+      loop: true,
       delay: 100
     })
 
     typewriter
       .typeString('Hi, I\'m Peyton.')
       .pauseFor(1500)
-      .pasteString('<div class="py-1 sm:py-2"><div/>')
+      .deleteAll()
       .typeString('I\'m a web developer.')
+      .pauseFor(3000)
       .start();
   }, [])
 
   const Navlink = ({text}) => (
     <li className="flex-1 text-center py-2">
-      <button className="btn text-primary">{text}</button>
+      <Link
+        to={text}
+        smooth={true}
+      >
+        <button className="text-primary btn">{text.toUpperCase()}</button>
+      </Link>
     </li>
   )
 
   const Navbar = () => (
     <div className="z-10 w-full absolute child">
         <ul className="w-full h-20 flex justify-around items-center max-w-screen-lg mx-auto">
-            <Navlink text="ABOUT"/>
-            <Navlink text="PROJECTS"/>
-            <Navlink text="CONTACT"/>
+            <Navlink text="about"/>
+            <Navlink text="projects"/>
+            <Navlink text="contact"/>
         </ul>
     </div>
   )
-
-  // const ShapeDivider = () => {
-  //   return(
-  //     <div>
-  //       <div class="custom-shape-divider-bottom-1623437888">
-  //         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-  //             <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"></path>
-  //         </svg>
-  //       </div>
-  //     </div>
-  //   )
-  // }
 
   return (
     <div className="mb-28 relative parent">
@@ -53,7 +48,12 @@ export default function Header() {
           <h1 aria-hidden="true" className="hero-text leading-10"></h1>
         </div>
         <div className="z-10 mb-14 mt-9">
-          <button className="btn btn-blue">MY PROJECTS</button>
+          <Link
+            to="projects"
+            smooth={true}
+          >
+            <button className="btn btn-blue">MY PROJECTS</button>
+          </Link>
         </div>
       </section>
     </div>
