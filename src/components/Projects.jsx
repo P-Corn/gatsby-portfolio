@@ -65,7 +65,7 @@ export default function Projects() {
   )
 
   return (
-    <div className="mb-28">
+    <div className="mb-28" id="projects">
       <div className="section">
         <SectionHeader title="Projects"/>
         <div>

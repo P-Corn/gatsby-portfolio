@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from 'react';
 import Typewriter from 'typewriter-effect/dist/core';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 export default function Header() {
 
@@ -21,12 +21,11 @@ export default function Header() {
 
   const Navlink = ({text}) => (
     <li className="flex-1 text-center py-2">
-      <Link
-        to={text}
-        smooth={true}
-      >
-        <button className="text-primary btn">{text.toUpperCase()}</button>
-      </Link>
+      <AnchorLink 
+        className="text-primary btn" 
+        to={`/#${text}`} 
+        title={text.toUpperCase()}
+      />
     </li>
   )
 
@@ -48,12 +47,11 @@ export default function Header() {
           <h1 aria-hidden="true" className="hero-text leading-10"></h1>
         </div>
         <div className="z-10 mb-14 mt-9">
-          <Link
-            to="projects"
-            smooth={true}
-          >
-            <button className="btn btn-blue">MY PROJECTS</button>
-          </Link>
+          <AnchorLink
+            className="btn btn-blue"
+            to="/#projects"
+            title="MY PROJECTS"
+          />
         </div>
       </section>
     </div>

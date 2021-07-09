@@ -10,6 +10,9 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
+      resolve: 'gatsby-plugin-anchor-links',
+    },
+    {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {

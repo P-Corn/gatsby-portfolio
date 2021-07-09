@@ -68,7 +68,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="pb-28">
+    <div className="pb-28" id="contact">
       <div className="section">
         <SectionHeader title="Contact"/>
         <form onSubmit={handleSubmit} className="card">

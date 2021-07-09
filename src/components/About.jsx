@@ -10,17 +10,6 @@ import AboutBg from '../media/svg/aboutBgRight.svg';
 export default function About() {
   const skills = ['HTML', 'CSS', ' JavaScript', 'React', 'Node', 'SCSS', 'Git'];
 
-  const MyPicture = () => (
-    <StaticImage 
-      src="../media/meCut.png" 
-      alt="picture of myself"
-      placeholder="blurred"
-      width={120}
-      height={145}
-      objectFit="fill"
-    />
-  )
-
   const Subtitle = ({subtitle}) => (
     <h5 className="text-bodyText font-semibold text-xl">{subtitle}</h5>
   )
@@ -61,7 +50,7 @@ export default function About() {
   )
 
   return (
-    <div className="mb-28">
+    <div className="mb-28" id="about">
       <section className="section">
         <SectionHeader title="About" />
         <AboutContent />
