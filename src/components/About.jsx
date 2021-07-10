@@ -8,7 +8,7 @@ import Github from '../media/svg/github.svg';
 import AboutBg from '../media/svg/aboutBgRight.svg';
 
 export default function About() {
-  const skills = ['HTML', 'CSS', ' JavaScript', 'React', 'Node', 'SCSS', 'Git'];
+  const skills = ['HTML5', 'CSS3', ' JavaScript', 'React', 'Git', 'Node JS', 'SCSS', 'SQL'];
 
   const Subtitle = ({subtitle}) => (
     <h5 className="text-bodyText font-semibold text-xl">{subtitle}</h5>
@@ -20,7 +20,7 @@ export default function About() {
         <div className="sm:w-3/4 md:w-1/2 lg:w-1/2">
           <div className="mb-8 md:mb-10">
             <Subtitle subtitle="Me:"/>
-            <p className="text-bodyText md:mt-1.5">Here's a bunch of text that will sum up just about everything you'll need to know about me. Here's a bunch of text that will sum up just about everything you'll need to know about me.</p>
+            <p className="text-bodyText md:mt-1.5">I'm a front-end developer with some back-end experience. My language of choice is JavaScript but I have experience using many other technologies.</p>
           </div>
           <div className="mb-5 md:mb-7">
             <Subtitle subtitle="Skills:"/>
