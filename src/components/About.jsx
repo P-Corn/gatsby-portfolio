@@ -32,11 +32,11 @@ export default function About() {
           </div>
           <div>
             <Subtitle subtitle="Social:"/>
-            <div className="flex justify-start mt-2.5 md:mt-4">
-              <a href="https://www.twitter.com" className="mr-14">
+            <div className="flex justify-between sm:justify-start mt-2.5 md:mt-4">
+              <a href="https://www.twitter.com" className="sm:mr-20">
                 <Twitter className="social-link"/>
               </a>
-              <a href="https://www.linkedin.com" className="mr-14">
+              <a href="https://www.linkedin.com" className="sm:mr-20">
                 <Linkedin className="social-link"/>
               </a>
               <a href="https://www.github.com">
