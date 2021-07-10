@@ -46,7 +46,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className=" absolute child top-0 -right-80 md:-right-40 lg:-right-20 z-10">
+      <div className=" absolute child top-0 -right-96 md:-right-40 lg:-right-20 z-10">
         <AboutBg />
       </div>
     </div>
