@@ -105,7 +105,7 @@ export default function Contact() {
           <div className="form-message transition-all duration-300 ease-in-out bg-green w-full text-center text-bodyText opacity-0">Message sent!</div>
           <div className="mb-2"/>
           <div className="w-full flex justify-end">
-            <button className="btn bg-primary text-white shadow-md hover:shadow-lg">SUBMIT</button>
+            <button className="btn btn-blue">SUBMIT</button>
           </div>
         </form>
       </div>

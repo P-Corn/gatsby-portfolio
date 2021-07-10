@@ -59,6 +59,14 @@
     shadow-md
     hover:shadow-lg
 }
+
+.btn-white {
+    @apply 
+    text-primary 
+    shadow-md 
+    hover:shadow-lg 
+    hover:bg-gray-100
+}
 /* .btn-blue:hover {
     @apply bg-blue-700;
 } */
@@ -83,4 +91,15 @@
 
 .Typewriter__cursor {
     @apply text-green
+}
+
+.social-link {
+    @apply 
+    fill-current  
+    text-primary 
+    h-10 
+    w-10 
+    hover:text-primary-dark 
+    transition-all 
+    duration-200
 }

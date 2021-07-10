@@ -18,7 +18,7 @@ module.exports = {
       section: "#f6f9fc",
       primary: {
         DEFAULT: "#747FE0",
-        dark: "#4b57c3"
+        dark: "#4352d6"
       },
       bodyText: "#525f7f",
       darkBg: "#5a5d7a"

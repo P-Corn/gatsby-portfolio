@@ -53,11 +53,11 @@ export default function Projects() {
         </div>
         <div>
           <a href={previewLink}>
-            <button className="btn bg-primary text-white mb-4 shadow-md hover:shadow-lg">LIVE DEMO</button>
+            <button className="btn btn-blue">LIVE DEMO</button>
           </a>
           {/* <div className="mx-4"></div> */}
           <a href={githubLink}>
-            <button className="btn text-primary shadow-md hover:shadow-lg">VIEW SOURCE</button>
+            <button className="btn btn-white">VIEW SOURCE</button>
           </a>
         </div>
       </div>

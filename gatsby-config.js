@@ -5,13 +5,11 @@ require("dotenv").config({
 module.exports = {
   /* Your site config here */
   plugins: [
-    'gatsby-plugin-postcss',
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    {
-      resolve: 'gatsby-plugin-anchor-links',
-    },
+    `gatsby-plugin-anchor-links`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
