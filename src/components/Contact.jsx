@@ -44,7 +44,12 @@ export default function Contact() {
     }
   }
 
-  const formMessage = document === null ? '' : document.querySelector('.form-message');
+  const formMessage = () => {
+    if (!document) {
+      return
+    }
+    return document.querySelector('.form-message');
+  }
   const handleSuccess = () => {
     setName('');
     setEmail('');
