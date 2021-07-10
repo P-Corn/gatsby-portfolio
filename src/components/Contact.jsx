@@ -44,7 +44,7 @@ export default function Contact() {
     }
   }
 
-  const formMessage = document.querySelector('.form-message');
+  const formMessage = !document ? '' : document.querySelector('.form-message');
   const handleSuccess = () => {
     setName('');
     setEmail('');

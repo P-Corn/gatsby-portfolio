@@ -15,7 +15,7 @@ export default function Header() {
       .pauseFor(1500)
       .deleteAll()
       .typeString('I\'m a web developer.')
-      .pauseFor(3000)
+      .pauseFor(9000)
       .start();
   }, [])
 
