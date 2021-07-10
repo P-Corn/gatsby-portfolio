@@ -36,7 +36,7 @@ module.exports = {
       card: '0 50px 100px rgb(50 50 93 / 5%), 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 10%)'
     },
     screens: {
-      'xs': '370px',
+      'xs': '345px',
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 

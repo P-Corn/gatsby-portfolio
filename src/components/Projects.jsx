@@ -51,12 +51,13 @@ export default function Projects() {
             <SkillSpan skill={skill}/>
           ))}
         </div>
-        <div>
-          <a href={previewLink}>
+        <div className="flex flex-wrap">
+          <a className="flex-none" href={previewLink}>
             <button className="btn btn-blue">LIVE DEMO</button>
           </a>
-          {/* <div className="mx-4"></div> */}
-          <a href={githubLink}>
+          <div className="xs:mr-4"></div>
+          <div className="my-6"></div>
+          <a className="flex-none" href={githubLink}>
             <button className="btn btn-white">VIEW SOURCE</button>
           </a>
         </div>
