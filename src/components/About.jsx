@@ -15,11 +15,8 @@ export default function About() {
   )
 
   const AboutContent = () => (
-    <div className="flex card w-full relative parent overflow-hidden">
-      <div className="z-20">
-        {/* <div className="flex-none pt-3 mx-auto mb-8 md:mb-0 flex justify-center items-center bg-section shadow-inner w-48 h-48 rounded-full">
-          <MyPicture />
-        </div> */}
+    <div className="flex card relative parent overflow-hidden">
+      <div className="z-20 min-w-0 min-h-0">
         <div className="sm:w-3/4 md:w-1/2 lg:w-1/2">
           <div className="mb-8 md:mb-10">
             <Subtitle subtitle="Me:"/>
@@ -36,20 +33,20 @@ export default function About() {
           <div>
             <Subtitle subtitle="Social:"/>
             <div className="flex justify-start mt-2.5 md:mt-4">
-              <a href="https://www.twitter.com" className="mr-20">
+              <a href="https://www.twitter.com" className="mr-14">
                 <Twitter className="social-link"/>
               </a>
-              <a href="https://www.linkedin.com" className="mr-20">
+              <a href="https://www.linkedin.com" className="mr-14">
                 <Linkedin className="social-link"/>
               </a>
-              <a href="https://www.github.com" className="mr-20">
+              <a href="https://www.github.com">
                 <Github className="social-link"/>
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div className="absolute child top-0 right-0 z-10">
+      <div className="absolute child top-0 -right-80 md:-right-40 lg:-right-20 z-10">
         <AboutBg />
       </div>
     </div>
