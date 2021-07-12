@@ -1,6 +1,5 @@
 import React from "react";
 import SectionHeader from './utils/SectionHeader';
-import { StaticImage } from 'gatsby-plugin-image';
 import SkillSpan from "./utils/SkillSpan";
 import Twitter from '../media/svg/twitter.svg';
 import Linkedin from '../media/svg/linkedIn.svg';
@@ -8,7 +7,7 @@ import Github from '../media/svg/github.svg';
 import AboutBg from '../media/svg/aboutBgRight.svg';
 
 export default function About() {
-  const skills = ['HTML5', 'CSS3', ' JavaScript', 'React', 'Git', 'Node JS', 'SCSS', 'SQL'];
+  const skills = ['HTML5', 'CSS3', ' JavaScript', 'React', 'Git', 'Node JS', 'SCSS', 'SQL', 'Python'];
 
   const Subtitle = ({subtitle}) => (
     <h5 className="text-bodyText font-semibold text-xl">{subtitle}</h5>
@@ -20,7 +19,10 @@ export default function About() {
         <div className="sm:w-3/4 md:w-1/2 lg:w-1/2">
           <div className="mb-8 md:mb-10">
             <Subtitle subtitle="Me:"/>
-            <p className="text-bodyText md:mt-1.5">I'm a front-end developer with some back-end experience. My language of choice is JavaScript but I have experience using many other technologies.</p>
+            <p className="text-bodyText md:mt-1.5">
+              I'm a front-end developer with back-end experience. My language of choice is JavaScript but I have experience using many other technologies.
+              I enjoy exercising, programming, and learning new things.
+            </p>
           </div>
           <div className="mb-5 md:mb-7">
             <Subtitle subtitle="Skills:"/>
@@ -36,10 +38,10 @@ export default function About() {
               <a href="https://www.twitter.com" className="sm:mr-20">
                 <Twitter className="social-link"/>
               </a>
-              <a href="https://www.linkedin.com" className="sm:mr-20">
+              <a href="https://www.linkedin.com/in/peyton-cornelison" className="sm:mr-20">
                 <Linkedin className="social-link"/>
               </a>
-              <a href="https://www.github.com">
+              <a href="https://github.com/P-Corn">
                 <Github className="social-link"/>
               </a>
             </div>

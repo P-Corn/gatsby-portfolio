@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import SectionHeader from './utils/SectionHeader';
@@ -30,7 +30,7 @@ export default function Projects() {
   const [projects] = useState(projectData.allContentfulProject.edges);
 
   const ProjectCard = ({title, desc, skills, previewLink, githubLink, image}) => (
-    <div className="relative parent card mb-10 project-card lg:flex lg:justify-end overflow-hidden">
+    <div className="relative parent card mb-10 md:mb-20 project-card lg:flex lg:justify-end overflow-hidden">
       <div className="absolute top-0 left-0 invisible lg:visible">
         <GatsbyImage
           image={image}
