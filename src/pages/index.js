@@ -13,6 +13,7 @@ export default function Home() {
           <About/>
           <Projects/>
           <Contact/>
+          <div className="text-center py-6 md:text-lg">peytoncornelison@gmail.com</div>
         </div>
       </div>
     </div>
