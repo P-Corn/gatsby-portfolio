@@ -28,7 +28,7 @@ export default function About() {
             <Subtitle subtitle="Skills:"/>
             <div className="mt-2.5 md:mt-4">
               {skills.map(skill => (
-                <SkillSpan skill={skill}/>
+                <SkillSpan key={skill} skill={skill}/>
               ))}
             </div>
           </div>

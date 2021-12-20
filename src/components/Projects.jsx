@@ -13,7 +13,9 @@ export default function Projects() {
         edges {
           node {
             githubLink
-            description
+            description {
+              description
+            }
             previewLink
             title
             technologies
@@ -38,7 +40,6 @@ export default function Projects() {
         />
       </div>
       <ProjectBackground className="project-background invisible lg:visible absolute -top-px -right-px"/>
-      {/* <div className={`project-background invisible lg:visible -top-px -right-px absolute`}></div> */}
       <div className="lg:w-7/12 z-10">
         <div>
           <h2 className="text-3xl text-bodyText font-normal mb-8">{title}</h2>
@@ -48,16 +49,16 @@ export default function Projects() {
         </div>
         <div className="mb-8">
           {skills.map(skill => (
-            <SkillSpan skill={skill}/>
+            <SkillSpan key={skill} skill={skill}/>
           ))}
         </div>
         <div className="flex flex-wrap">
-          <a className="flex-none" href={previewLink}>
+          <a className="flex-none" target="_blank" rel="noopener noreferrer" href={previewLink}>
             <button className="btn btn-blue">LIVE DEMO</button>
           </a>
           <div className="xs:mr-4"></div>
           <div className="my-6"></div>
-          <a className="flex-none" href={githubLink}>
+          <a className="flex-none" target="_blank" rel="noopener noreferrer" href={githubLink}>
             <button className="btn btn-white">VIEW SOURCE</button>
           </a>
         </div>
@@ -72,8 +73,9 @@ export default function Projects() {
         <div>
           {projects.map(project => (
             <ProjectCard 
+              key={project.node.title}
               title={project.node.title} 
-              desc={project.node.description} 
+              desc={project.node.description.description} 
               skills={project.node.technologies.split(',')} 
               previewLink={project.node.previewLink} 
               githubLink={project.node.githubLink}
