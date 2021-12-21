@@ -20,7 +20,7 @@ export default function About() {
           <div className="mb-8 md:mb-10">
             <Subtitle subtitle="Me:"/>
             <p className="text-bodyText md:mt-1.5">
-              I'm a full-stack developer with more experience in front-end. My language of choice is JavaScript but I have experience using many other technologies.
+              I'm a full-stack developer with more experience in front-end development. My language of choice is JavaScript but I have experience using many other technologies.
               I enjoy exercising, programming, and learning new things.
             </p>
           </div>
