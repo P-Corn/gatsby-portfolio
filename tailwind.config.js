@@ -36,6 +36,11 @@ module.exports = {
       card: '0 50px 100px rgb(50 50 93 / 5%), 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 10%)'
     },
     screens: {
+      'bg-xs': '600px',
+      'bg-sm': '1048px',
+      'bg-md': '1518px', 
+      'bg-lg': '2088px', 
+      'bg-xl': '2550px', 
       'xs': '345px',
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
@@ -55,7 +60,15 @@ module.exports = {
     extend: {
       transitionProperty: {
        'height': 'height',
-      }
+      },
+      // backgroundImage: {
+      //   'header-sm': "url('./static/animatedBgSM.svg')",
+      //   'header-xs': "url('./static/animatedBgXS.svg')",
+      //   'header-md': "url('./static/animatedBgMD.svg')",
+      //   'header-norm': "url('./static/animatedbg.svg')",
+      //   'header-lg': "url('./static/animatedBgLG.svg')",
+      //   'header-xl': "url('./static/animatedBgXL.svg')",
+      // },
     }
   },
   variants: {

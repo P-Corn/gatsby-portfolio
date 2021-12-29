@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import SectionHeader from './utils/SectionHeader';
 import SkillSpan from "./utils/SkillSpan";
-import ProjectBackground from '../media/svg/project-background-white.svg';
+import ProjectBackground from '../media/svg/project-background-white.inline.svg';
 
 export default function Projects() {
 

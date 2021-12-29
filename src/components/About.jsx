@@ -1,10 +1,10 @@
 import React from "react";
 import SectionHeader from './utils/SectionHeader';
 import SkillSpan from "./utils/SkillSpan";
-import Twitter from '../media/svg/twitter.svg';
-import Linkedin from '../media/svg/linkedIn.svg';
-import Github from '../media/svg/github.svg';
-import AboutBg from '../media/svg/aboutBgRight.svg';
+import Twitter from '../media/svg/twitter.inline.svg';
+import Linkedin from '../media/svg/linkedIn.inline.svg';
+import Github from '../media/svg/github.inline.svg';
+import AboutBg from '../media/svg/aboutBgRight.inline.svg';
 
 export default function About() {
   const skills = ['HTML5', 'CSS3', ' JavaScript', 'React', 'Redux', 'Node', 'SCSS', 'SQL', 'MongoDB', 'Java'];
