@@ -104,38 +104,38 @@
     duration-200
 }
 
-.homepage-bg {
+body {
     background-image: url('../media/svg/animatedBgXS.svg');
     background-attachment: fixed;
     background-position: center;
 }
 
 @media screen(bg-xs) {
-    .homepage-bg {
+    body {
         background-image: url('../media/svg/animatedBgSM.svg');
     }
 }
 
 @media screen(bg-sm) {
-    .homepage-bg {
+    body {
         background-image: url('../media/svg/animatedBgMD.svg');
     }
 }
 
 @media screen(bg-md) {
-    .homepage-bg {
+    body {
         background-image: url('../media/svg/animatedbg.svg');
     }
 }
 
 @media screen(bg-lg) {
-    .homepage-bg {
+    body {
         background-image: url('../media/svg/animatedBgLG.svg');
     }
 }
 
 @media screen(bg-xl) {
-    .homepage-bg {
+    body {
         background-image: url('../media/svg/animatedBgXL.svg');
     }
 }
