@@ -115,6 +115,9 @@
     width: 100%;
     height: 100%;
     background: url('../media/svg/animatedBgXS.svg') center center;
+    will-change: transform;
+    top: 0;
+    left: 0;
 }
 
 @media screen(bg-xs) {

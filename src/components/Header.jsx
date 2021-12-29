@@ -14,7 +14,7 @@ export default function Header() {
       .typeString('Hi, I\'m Peyton.')
       .pauseFor(1500)
       .deleteAll()
-      .typeString('I\'m a web developer.')
+      .typeString('I\'m a full-stack web developer.')
       .pauseFor(9000)
       .start();
   }, [])
