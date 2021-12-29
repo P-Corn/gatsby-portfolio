@@ -116,7 +116,7 @@
     height: 100vh;
     background: url('../media/svg/animatedBgXS.svg') center center;
     will-change: transform;
-    bottom: 0;
+    right: 0;
     left: 0;
     z-index: -1;
 }
