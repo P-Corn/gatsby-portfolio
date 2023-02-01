@@ -7,7 +7,7 @@ import Github from '../media/svg/github.inline.svg';
 import AboutBg from '../media/svg/aboutBgRight.inline.svg';
 
 export default function About() {
-  const skills = ['HTML5', 'CSS3', ' JavaScript', 'React', 'Redux', 'Node', 'SCSS', 'SQL', 'MongoDB', 'Java'];
+  const skills = ['HTML5', 'CSS3', 'SCSS', ' JavaScript', 'React', 'Redux', 'Vue', 'Vuex', 'Node', 'Express', 'SQL', 'Git'];
 
   const Subtitle = ({subtitle}) => (
     <h5 className="text-bodyText font-semibold text-xl">{subtitle}</h5>
@@ -20,8 +20,7 @@ export default function About() {
           <div className="mb-8 md:mb-10">
             <Subtitle subtitle="Me:"/>
             <p className="text-bodyText md:mt-1.5">
-              I'm a full-stack developer with more experience in front-end development. My language of choice is JavaScript but I have experience using many other technologies.
-              I enjoy exercising, programming, and learning new things.
+              I'm a full-stack developer with experience designing elegant user interfaces, building REST API endpoints, and managing robust SQL databases. I'm passionate about creating intuitive, responsive, and accessible web applications.
             </p>
           </div>
           <div className="mb-5 md:mb-7">

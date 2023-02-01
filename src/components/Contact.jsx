@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useRef} from "react";
 import SectionHeader from './utils/SectionHeader';
 import emailjs from 'emailjs-com';
 
@@ -9,6 +9,7 @@ const Input = ({inputName, type, placeholder, value, onChange, textArea = false}
       type={type} 
       name={inputName}
       value={value}
+      required
       onChange={onChange}
       placeholder={placeholder} 
       aria-label={placeholder}
@@ -20,6 +21,7 @@ const Input = ({inputName, type, placeholder, value, onChange, textArea = false}
     rows="6" 
     type={type}
     name={inputName}
+    required
     value={value}
     onChange={onChange}
     placeholder={placeholder} 
@@ -30,6 +32,7 @@ const Input = ({inputName, type, placeholder, value, onChange, textArea = false}
 
 export default function Contact() {
 
+  const formMessageRef = useRef(null)
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -44,29 +47,26 @@ export default function Contact() {
     }
   }
 
-  const formMessage = () => {
-    if (!document) {
-      return
-    }
-    return document.querySelector('.form-message');
-  }
   const handleSuccess = () => {
     setName('');
     setEmail('');
     setMessage('');
 
-    formMessage.classList.remove('opacity-0')
+    formMessageRef.current.classList.remove('opacity-0')
     setTimeout(() => {
-      formMessage.classList.add('opacity-0')
+      formMessageRef.current.classList.add('opacity-0')
     }, 3000)
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (name === '' || email === '' || message === '') {
+      return;
+    } else handleSuccess();
 
     emailjs.sendForm('portfolio_site', 'portfolio_site', e.target, 'user_WDObBAlbPYJe8ZiZ6VQ9w')
       .then(() => {
-        handleSuccess();
+        
       }, (error) => {
         throw new Error(error.text);
       });
@@ -94,7 +94,7 @@ export default function Contact() {
           <Input 
             type="email" 
             inputName="email" 
-            value={email} 
+            value={email}
             onChange={handleChange}
             placeholder="Your email"
           />
@@ -107,7 +107,7 @@ export default function Contact() {
             placeholder="Your message" 
             textArea="true"
           />
-          <div className="form-message transition-all duration-300 ease-in-out bg-green w-full text-center text-bodyText opacity-0">Message sent!</div>
+          <div ref={formMessageRef} className="form-message transition-all duration-300 ease-in-out bg-green w-full text-center text-bodyText opacity-0">Message sent!</div>
           <div className="mb-2"/>
           <div className="w-full flex justify-end">
             <button className="btn btn-blue">SUBMIT</button>

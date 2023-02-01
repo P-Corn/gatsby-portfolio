@@ -7,15 +7,16 @@ export default function Header() {
   useEffect(() => {
     const typewriter = new Typewriter(document.querySelector('.hero-text'), {
       loop: true,
-      delay: 100
+      delay: 50,
+      deleteSpeed: 30,
     })
 
     typewriter
-      .typeString('Hi, I\'m Peyton.')
-      .pauseFor(1500)
+      .typeString('Hi, I\'m Peyton, a full-stack developer')
+      .pauseFor(8000)
       .deleteAll()
-      .typeString('I\'m a front-end developer.')
-      .pauseFor(9000)
+      .typeString('Check out my projects below')
+      .pauseFor(2000)
       .start();
   }, [])
 
