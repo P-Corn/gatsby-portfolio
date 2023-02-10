@@ -7,7 +7,7 @@ import Github from '../media/svg/github.inline.svg';
 import AboutBg from '../media/svg/aboutBgRight.inline.svg';
 
 export default function About() {
-  const skills = ['HTML5', 'CSS3', 'SCSS', ' JavaScript', 'React', 'Redux', 'Vue', 'Vuex', 'Node', 'Express', 'SQL', 'Git'];
+  const skills = ['HTML5', 'CSS3', 'SCSS', ' JavaScript', 'React', 'Redux', 'Vue', 'Vuex', 'Node', 'Express', 'SQL', 'Git', 'TypeScript'];
 
   const Subtitle = ({subtitle}) => (
     <h5 className="text-bodyText font-semibold text-xl">{subtitle}</h5>
