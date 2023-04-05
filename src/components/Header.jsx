@@ -7,7 +7,7 @@ export default function Header() {
   useEffect(() => {
     const typewriter = new Typewriter(document.querySelector('.hero-text'), {
       loop: true,
-      delay: 60,
+      delay: 70,
       deleteSpeed: 50,
     })
 
