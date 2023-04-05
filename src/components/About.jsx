@@ -39,10 +39,10 @@ export default function About() {
               <a href="https://www.linkedin.com/in/peyton-cornelison" className="sm:mr-20">
                 <Linkedin className="social-link"/>
               </a>
-              <a href="https://github.com/P-Corn">
+              <a href="https://github.com/P-Corn" className="sm:mr-20">
                 <Github className="social-link"/>
               </a>
-              <a href="https://www.twitter.com" className="sm:mr-20">
+              <a href="https://www.twitter.com">
                 <Twitter className="social-link"/>
               </a>
             </div>
