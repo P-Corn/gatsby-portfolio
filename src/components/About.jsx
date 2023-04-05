@@ -20,7 +20,9 @@ export default function About() {
           <div className="mb-8 md:mb-10">
             <Subtitle subtitle="Me:"/>
             <p className="text-bodyText md:mt-1.5">
-              I'm a full-stack developer with experience designing elegant user interfaces, building REST API endpoints, and managing robust SQL databases. I'm passionate about creating intuitive, responsive, and accessible web applications.
+              I'm a full-stack developer with experience designing elegant user interfaces, building REST API endpoints, 
+              and managing robust SQL databases. I'm passionate about creating intuitive, responsive, and accessible web applications.
+              I began my journey as a developer in 2019 and have been learning and growing ever since.
             </p>
           </div>
           <div className="mb-5 md:mb-7">
@@ -34,14 +36,14 @@ export default function About() {
           <div>
             <Subtitle subtitle="Social:"/>
             <div className="flex justify-between sm:justify-start mt-2.5 md:mt-4">
-              <a href="https://www.twitter.com" className="sm:mr-20">
-                <Twitter className="social-link"/>
-              </a>
               <a href="https://www.linkedin.com/in/peyton-cornelison" className="sm:mr-20">
                 <Linkedin className="social-link"/>
               </a>
               <a href="https://github.com/P-Corn">
                 <Github className="social-link"/>
+              </a>
+              <a href="https://www.twitter.com" className="sm:mr-20">
+                <Twitter className="social-link"/>
               </a>
             </div>
           </div>
